@@ -6,8 +6,8 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
     /* 标题文字大小 */
-    --titleSize: 3.5rem;
-    --contextSize: 1.5rem;
+    --titleSize: 2.5rem;
+    --contextSize: 1.1rem;
 }
 
 html,
@@ -266,7 +266,7 @@ code {
 }
 
 .lovexhj2ContentTextBox span::after {
-    content: '>';
+    content: '●';
 }
 
 .lovexhj2ContentText ul {

@@ -112,7 +112,7 @@
                 <div>
                     <p class="lovexhj2ContentTitle">{{ lovexhj.contact.title }}</p>
                     <ul>
-                        <li v-for="(item, index) in lovexhj.contact.list">
+                        <li v-for="(item, _) in lovexhj.contact.list">
                             <p class="lovexhj4ItemTitle">{{ item.name }}</p>
                             <p class="lovexhj4ItemContext">{{ item.context }}</p>
                         </li>
