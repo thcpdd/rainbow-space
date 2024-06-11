@@ -95,7 +95,7 @@
                 </div>
             </div>
             <el-dialog :title="lovexhj.project.list[projectIndex].name" :model-value="projectDialog"
-                       :append-to-body="true" width="75%" @close="projectDialog = false">
+                       :append-to-body="true" width="85%" @close="projectDialog = false">
                 <a :href="lovexhj.project.list[projectIndex].url" class="lovexhj3ContentBtn"
                    target="_blank">网站主页</a>&nbsp;
                 <a :href="lovexhj.project.list[projectIndex].source" class="lovexhj3ContentBtn"
@@ -112,9 +112,14 @@
                 <div>
                     <p class="lovexhj2ContentTitle">{{ lovexhj.contact.title }}</p>
                     <ul>
-                        <li v-for="(item, _) in lovexhj.contact.list">
+                        <li v-for="item in lovexhj.contact.list">
                             <p class="lovexhj4ItemTitle">{{ item.name }}</p>
-                            <p class="lovexhj4ItemContext">{{ item.context }}</p>
+                            <p v-if="item.link" class="lovexhj4ItemContext">
+                                <a @click="openGitee(item.link)">点击进入</a>
+                            </p>
+                            <p v-else class="lovexhj4ItemContext">
+                                {{ item.context }}
+                            </p>
                         </li>
                     </ul>
                 </div>
@@ -140,6 +145,10 @@ function startTyping() {
         backSpeed: 50,
         loop: true
     })
+}
+
+function openGitee(link) {
+    window.open(link)
 }
 
 // 平滑跳转

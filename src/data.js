@@ -38,7 +38,7 @@ export default {
                 "<span></span>但是对于Web开发我有着<b>浓厚的兴趣</b>，喜欢用学习到的知识去设计与编写一些独特的网站，毕竟兴趣才是我最好的老师。<br/>" +
                 "<span></span>曾在<b>蓝桥杯国赛 Python 组中取得优秀奖</b>。<br/>" +
                 "<span></span>我熟悉 <b>Python 高级特性</b>，例如<b>生成器、装饰器、上下文管理器、协程、类元编程、垃圾回收机制</b>等。<b>并在多个实际项目中使用 Python 进行开发，积累了丰富的实战经验。</b><br/>" +
-                "<span></span>我熟悉计算机网络原理，例如 <b>TCP / IP 协议</b>、<b>HTTP、WebSocket 协议</b>等。<br/>" +
+                "<span></span>我熟悉计算机网络原理，例如 <b>TCP / IP 协议</b>、<b>HTTP</b>、<b>WebSocket 协议</b>等。<br/>" +
                 "<span></span>我熟练使用 MySQL 进行<b>数据库表结构设计、分页查询优化、索引结构、事务、存储引擎</b>等。<br/>" +
                 "<span></span>我熟悉 Redis 的<b>基本使用场景</b>和<b>底层实现原理</b>，能够使用 Redis 进行<b>缓存设计</b>并了解其<b>数据持久化</b>，并在一些项目中实现了基于 Redis 的分布式锁。<br/>" +
                 "<span></span>我熟悉 <b>Django、FastAPI</b> 等 Python 主流后端开发框架。<br/>"
@@ -83,7 +83,7 @@ export default {
         list: [
             {
                 name: "智能抢课系统",
-                text: "通过爬虫程序快速完成校园网的选课。",
+                text: "通过爬虫程序快速完成校园课程的选课。",
                 nb: [
                     "FastAPI", "Vue3", "Celery", "MySQL", "Redis", "RabbitMQ", "Nginx"
                 ],
@@ -170,7 +170,7 @@ export default {
                 ],
                 url: "//jiadian.rainbow.hi.cn",
                 source: "https://gitee.com/kill-my-teammates-first/home_appliances",
-                img: "./images/jiadian.png",
+                img: "./images/jiadian.svg",
                 content: `<h2><b>项目类型</b></h2>
                 <p>用于学习的项目。也是我第一个独立完成的Web应用。</p>
                 <h2><b>开发周期</b></h2>
@@ -201,113 +201,86 @@ export default {
                 </ul>`
             },
             {
-                name: "记仇小本本",
-                text: "简约到极致的日记记录",
-                nb: [
-                    "Gitee Issues", "Vue", "Vue", "Linux", "SEO", "CDN"
-                ],
-                url: "https://heng.n0ts.top/",
-                source: "https://gitee.com/lu_chengwei/pc/",
-                img: "./images/heng1.png",
-                content: `<h2>项目类型</h2>
-                <p>练手项目</p>
-                <h2>开发周期</h2>
-                <p>1人/2天</p>
-                <h2>开发工具</h2>
-                <p>Visual Code、Git、Postman、Gitee API</p>
-                <h2>项目背景</h2>
-                <p>单纯的记仇小本本，可用于记录日常生活</p>
-                <h2>模块介绍</h2>
-                <p>1、	查看记仇；</p>
-                <p>2、	发布记仇；</p>
-                <h2>项目技术</h2>
-                <p>1、	前端采用Vue + ElementUI制作；</p>
-                <p>2、	数据存储利用了Gitee Issues进行存储；</p>
-                <p>3、	CSS 3D样式模拟书本翻页；</p>
-                <p>4、	CSS 绘制书本样式；</p>
-                <p>5、	懒加载记仇数据，类似于翻页；</p>
-                <p>6、	富文本支持，表情照片视频支持；</p>
-                <p>7、	全端响应式自适应；</p>
-                <p>8、	采用CDN加速网站；</p>
-                <h2>项目预览</h2>
+                name: "小说驿站",
+                text: "一个独立开发的小说网站。",
+                nb: ["Django", "JQuery", "MySQL", "Redis"],
+                url: "//novelstation.rainbow.hi.cn/",
+                source: "https://gitee.com/kill-my-teammates-first/novael-station",
+                img: "./images/novelstation.svg",
+                content: `<h2><b>项目类型</b></h2>
+                <p>该项目的开发是为了<b>巩固 Django 所学知识</b>并提高自己<b>对业务逻辑的理解</b>和<b>独立解决问题的能力</b>。</p>
+                <h2><b>项目完成时间</b></h2>
+                <p>2023年7月26日</p>
+                <h2><b>模块介绍</b></h2>
+                <p><b>用户模块</b>：用户注册、用户登录、用户评论、用户中心、用户信息的增删改查。</p>
+                <p><b>小说模块</b>：首页、小说详情页、小说列表页、小说阅读页、小说评论页。</p>
+                <p><b>消息和评论模块</b>：用户注册成功消息、用户评论消息。</p>
+                <h2><b>技术栈</b></h2>
+                <p><code>Django、JQuery、MySQL、Redis</code></p>
+                <h2><b>项目预览</b></h2>
                 <ul>
-                    <li><img src="./images/heng1.png"></li>
-                    <li><img src="./images/heng2.png"></li>
-                    <li><img src="./images/heng3.png"></li>
+                    <li><img src="/images/novel1.png" alt="novel1"></li>
+                    <li><img src="/images/novel2.png" alt="novel2"></li>
+                    <li><img src="/images/novel3.png" alt="novel3"></li>
+                    <li><img src="/images/novel4.png" alt="novel4"></li>
+                    <li><img src="/images/novel5.png" alt="novel5"></li>
+                    <li><img src="/images/novel6.png" alt="novel6"></li>
+                    <li><img src="/images/novel7.png" alt="novel7"></li>
+                    <li><img src="/images/novel8.png" alt="novel8"></li>
                 </ul>`,
             },
             {
-                name: "IceCreem搜索导航",
-                text: "好看的导航搜索页",
-                nb: [
-                    "Vue", "Vue", "Linux", "SEO", "CDN"
-                ],
-                url: "https://n0ts.gitee.io/icecreamsearch/",
-                source: "https://gitee.com/lu_chengwei/pc/",
-                img: "./images/so.png",
-                content: `<h2>项目类型</h2>
-                <p>练手项目</p>
-                <h2>开发周期</h2>
-                <p>1人/2天</p>
-                <h2>开发工具</h2>
-                <p>Visual Code、Git、Postman、Gitee API</p>
-                <h2>项目背景</h2>
-                <p>团队需要，新年新官网</p>
-                <h2>模块介绍</h2>
-                <p>1、	搜索功能；</p>
-                <p>2、	搜索引擎切换与添加；</p>
-                <p>3、	各类实用网站导航与分类；</p>
-                <p>4、	配置本地存储；</p>
-                <p>5、	背景图获取 bing 每日壁纸或自定义壁纸；</p>
-                <p>6、	搜索结果数量自定义；</p>
-                <h2>项目技术</h2>
-                <p>1、	前端采用 Vue + ElementUI 制作，后端采用 Node + Mysql 制作；</p>
-                <p>2、	百度搜索结果实时回调；</p>
-                <p>3、	bing 每日壁纸回调；</p>
-                <p>4、	本地配置存储；</p>
-                <p>5、	实用网站分类预览；</p>
-                <p>6、	全端响应式自适应；</p>
-                <p>7、	采用CDN加速网站；</p>
-                <h2>项目预览</h2>
-                <p>暂无</p>`,
+                name: "天天生鲜",
+                text: "一个用于学习和熟悉整个Web开发流程的项目。",
+                nb: ["Django", "JQuery", "MySQL", "Redis"],
+                url: "//dailyfresh.rainbow.hi.cn",
+                source: "https://gitee.com/kill-my-teammates-first/fresh_everyday",
+                img: "./images/dailyfresh.png",
+                content: `<h2><b>项目类型</b></h2>
+                <p>用于学习Django的项目。</p>
+                <h2><b>项目完成时间</b></h2>
+                <p>2023年7月3日</p>
+                <h2><b>模块介绍</b></h2>
+                <p><b>用户模块</b>：用户的登录、注册、用户中心、用户收货地址、用户历史订单。</p>
+                <p><b>商品模块</b>：商品首页展示、商品详情、商品列表、商品搜索。</p>
+                <p><b>购物车模块</b>：购物车的增删改查。</p>
+                <p><b>订单模块</b>：提交订单。</p>
+                <h2><b>技术栈</b></h2>
+                <p><code>Django、JQuery、MySQL、Redis</code></p>
+                <h2><b>项目预览</b></h2>
+                <ul>
+                    <li><img src="/images/fresh1.png" alt="fresh1"></li>
+                    <li><img src="/images/fresh2.png" alt="fresh2"></li>
+                    <li><img src="/images/fresh3.png" alt="fresh3"></li>
+                    <li><img src="/images/fresh4.png" alt="fresh4"></li>
+                    <li><img src="/images/fresh5.png" alt="fresh5"></li>
+                </ul>`,
             },
             {
-                name: "极客之眼官网",
-                text: "GeekEyes极客之眼官方网站",
-                nb: [
-                    "Vue", "Linux", "SEO", "CDN"
-                ],
-                url: "https://www.geekeyes.cn/",
-                source: "https://gitee.com/lu_chengwei/pc/",
-                img: "./images/geek1.png",
-                content: `<h2>项目类型</h2>
-                <p>官网</p>
-                <h2>开发周期</h2>
-                <p>1人/8天</p>
-                <h2>开发工具</h2>
-                <p>Visual Code、Git、Postman、Gitee API</p>
-                <h2>项目背景</h2>
-                <p>团队需要，新年新官网</p>
+                name: "我的音乐",
+                text: "第一个Web应用。",
+                nb: ["Django", "MySQL"],
+                url: "//mymusic.rainbow.hi.cn",
+                source: "https://gitee.com/kill-my-teammates-first/my-music",
+                img: "./images/mymusic.png",
+                content: `<h2><b>项目类型</b></h2>
+                <p>用于学习的项目。</p>
+                <h2><b>项目完成时间</b></h2>
+                <p>2023年5月24日</p>
                 <h2>模块介绍</h2>
-                <p>1、	首页轮播图，介绍；</p>
-                <p>2、	关于我们；</p>
-                <p>3、	公益活动；</p>
-                <p>4、	捐赠人员；</p>
-                <p>5、	团队成员；</p>
-                <p>6、	加入我们；</p>
-                <h2>项目技术</h2>
-                <p>1、	前端采用Vue制作；</p>
-                <p>2、	CSS 中国风科技感设计；</p>
-                <p>3、	CSS 按钮赛博朋克电磁风格；</p>
-                <p>4、	CSS 推拉门图片风格；</p>
-                <p>5、	全端响应式自适应；</p>
-                <p>6、	采用CDN加速网站；</p>
-                <h2>项目预览</h2>
+                <p><code>用户模块</code>：用户注册、登录、用户中心。</p>
+                <p><code>音乐模块</code>：首页、音乐排行页、音乐播放页、音乐评论页。</p>
+                <h2><b>技术栈</b></h2>
+                <p><code>Django、MySQL</code></p>
+                <h2><b>项目预览</b></h2>
                 <ul>
-                    <li><img src="./images/geek1.png"></li>
-                    <li><img src="./images/geek2.png"></li>
-                    <li><img src="./images/geek3.png"></li>
-                    <li><img src="./images/geek4.png"></li>
+                    <li><img src="/images/music1.png" alt="music1"></li>
+                    <li><img src="/images/music2.png" alt="music2"></li>
+                    <li><img src="/images/music3.png" alt="music3"></li>
+                    <li><img src="/images/music4.png" alt="music4"></li>
+                    <li><img src="/images/music5.png" alt="music5"></li>
+                    <li><img src="/images/music6.png" alt="music6"></li>
+                    <li><img src="/images/music7.png" alt="music7"></li>
                 </ul>`,
             },
         ],
@@ -322,7 +295,7 @@ export default {
         list: [
             {
                 name: "Gitee主页",
-                context: "https://gitee.com/kill-my-teammates-first"
+                link: "https://gitee.com/kill-my-teammates-first"
             },
             {
                 name: "邮箱",
