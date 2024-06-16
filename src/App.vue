@@ -10,15 +10,6 @@
                         <span class="lovexhj1Typet"></span>
                     </div>
                     <div class="ContentSubTitle">{{ lovexhj.index.subTitle }}</div>
-                    <ul class="ContentContact">
-                        <li v-for="(item, index) in lovexhj.index.contact" :key="index">
-                            <a :href="item.link" target="_blank">
-                                <el-tooltip :content="item.name" placement="bottom" effect="light">
-                                    <i :class="'fa ' + item.icon"></i>
-                                </el-tooltip>
-                            </a>
-                        </li>
-                    </ul>
                     <div class="lovexhj1LoadMore">
                         <div class="loadMore" @click="scrollGoTo(lovexhj.index.loadMore.class)">
                             {{ lovexhj.index.loadMore.text }}
@@ -42,7 +33,7 @@
                         <div class="lovexhj2ContentText">
                             <div v-html="lovexhj.about.laozi.content" class="lovexhj2ContentTextBox"></div>
                             <ul>
-                                <li v-for="(item, _) in lovexhj.about.ability"
+                                <li v-for="item in lovexhj.about.ability"
                                     :style="'border-top: 5px solid ' + item.color">
                                     <i :class="'fa ' + item.icon "></i>
                                     <span :style="'color:' + item.color">{{ item.bfb }}</span>
@@ -126,12 +117,15 @@
             </div>
         </div>
     </div>
+    <!-- 网页底部信息 -->
+    <Footer></Footer>
 </template>
 
 <script setup>
 import data from "@/data.js";
 import {onMounted} from "vue";
 import {ref} from "vue";
+import Footer from "@/components/Footer.vue";
 
 const lovexhj = data;  // 网页数据
 const projectDialog = ref(false) // 项目演示窗口打开
@@ -206,14 +200,38 @@ onMounted(() => {
     startTyping();
     // 动画加载
     animationLoad();
+    let isMobile = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)
+    if (isMobile) {
+        let items = document.querySelectorAll('.footer-item')
+        items.forEach((item, index)=> {
+            if (index !== items.length - 1) {
+                item.style.borderBottom = '1px solid rgba(255, 255, 255, 0.1)'
+                item.style.borderRight = 'none'
+                item.style.marginBottom = '10px'
+                item.style.paddingBottom = '13px'
+                item.style.width = '-webkit-fill-available'
+            } else {
+                item.style.borderRight = 'none'
+            }
+        })
+    }
 })
 </script>
 
 <style>
+.el-dialog {
+    --el-font-size-large: 2.5rem;
+    --el-font-line-height-primary: 29px;
+}
+.el-dialog__body {
+    --el-dialog-content-font-size: 1.2rem;
+}
+@media(max-width: 560px) {
     .el-dialog {
-        --el-font-size-large: 3.1rem;
+    --el-font-size-large: 1.7rem;
     }
     .el-dialog__body {
-        --el-dialog-content-font-size: 1.2rem;
+        --el-dialog-content-font-size: 1rem;
     }
+}
 </style>

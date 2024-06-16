@@ -7,24 +7,7 @@ export default {
             "专注于后端开发。"
         ],
         bg: "./images/bg.jpg",
-        subTitle: "此情可待成追忆，只是当时已惘然。——《锦瑟》",
-        contact: [
-            // {
-            //     name: "Email",
-            //     icon: "fa-envelope",
-            //     link: "mailto:1834763300@qq.com"
-            // },
-            // {
-            //     name: "Gitee",
-            //     icon: "fa-github",
-            //     link: "https://gitee.com/kill-my-teammates-first"
-            // },
-            // {
-            //     name: "QQ",
-            //     icon: "fa-qq",
-            //     link: "https://wpa.qq.com/msgrd?v=3&uin=1656071287&site=qq&menu=yes"
-            // }
-        ],
+        subTitle: "众里寻他千百度，蓦然回首，那人却在灯火阑珊处。",
         loadMore: {
             text: "了解更多",
             class: "lovexhj2"
@@ -34,8 +17,8 @@ export default {
         title: "更详细的我",
         laozi: {
             img: "./images/avatar.jpg",
-            content: "<span></span>我今年19岁，是一名来自广西高校的的大二在读生，所学专业是<b>人工智能</b>。<br/>" +
-                "<span></span>但是对于Web开发我有着<b>浓厚的兴趣</b>，喜欢用学习到的知识去设计与编写一些独特的网站，毕竟兴趣才是我最好的老师。<br/>" +
+            content: "<span></span>我今年20岁，是一名来自广西高校的的大二在读生，所学专业是<b>人工智能</b>。<br/>" +
+                "<span></span>但是对于Web开发我有着<b>浓厚的兴趣</b>，毕竟兴趣才是我最好的老师，并喜欢将学习到的知识用于提高工作效率。<br/>" +
                 "<span></span>曾在<b>蓝桥杯国赛 Python 组中取得优秀奖</b>。<br/>" +
                 "<span></span>我熟悉 <b>Python 高级特性</b>，例如<b>生成器、装饰器、上下文管理器、协程、类元编程、垃圾回收机制</b>等。<b>并在多个实际项目中使用 Python 进行开发，积累了丰富的实战经验。</b><br/>" +
                 "<span></span>我熟悉计算机网络原理，例如 <b>TCP / IP 协议</b>、<b>HTTP</b>、<b>WebSocket 协议</b>等。<br/>" +
@@ -157,9 +140,11 @@ export default {
                 <p>6、在部署方面，使用<code>uWSGI + Nginx</code>的方式部署在云服务器中。</p>
                 <h2><b>项目预览</b></h2>
                 <ul>
-                    <li><img src="/images/snatcher-1.png" alt="snatcher-1.png"></li>
-                    <li><img src="/images/snatcher-2.png" alt="snatcher-2.png"></li>
-                    <li><img src="/images/snatcher-3.png" alt="snatcher-3.png"></li>
+                    <li><img src="/images/gp1.png" alt="gp1"></li>
+                    <li><img src="/images/gp2.png" alt="gp2"></li>
+                    <li><img src="/images/gp3.png" alt="gp3"></li>
+                    <li><img src="/images/gp4.png" alt="gp4"></li>
+                    <li><img src="/images/gp5.png" alt="gp5"></li>
                 </ul>`
             },
             {
@@ -291,7 +276,7 @@ export default {
         }
     },
     contact: {
-        title: "联系我",
+        title: "相关信息",
         list: [
             {
                 name: "Gitee主页",
